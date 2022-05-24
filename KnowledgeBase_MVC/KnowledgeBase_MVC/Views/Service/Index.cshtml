@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Услуги";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 text-center">
+            <h1 class="text-center text-primary mb-5">Действия над таблицей "Услуги"</h1>
+            <div class="align-items-center">
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Service" asp-action="Create">
+                        Создать
+                    </a>
+                </button>
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Service" asp-action="Read">
+                        Вывод всех услуг
+                    </a>
+                </button>
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Service" asp-action="Edit">
+                        Редактировать
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

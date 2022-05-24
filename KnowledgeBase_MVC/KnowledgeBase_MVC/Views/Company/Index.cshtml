@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Компании";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 text-center">
+            <h1 class="text-center text-primary mb-5">Действия над таблицей "Компания"</h1>
+            <div class="align-content-center  justify-content-center">
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Company" asp-action="Create">
+                        Создать
+                    </a>
+                </button>
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Company" asp-action="Read">
+                        Вывод всех компаний
+                    </a>
+                </button>
+                <button>
+                    <a class="nav-link text-dark"  asp-controller="Company" asp-action="Edit">
+                        Редактировать
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

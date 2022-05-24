@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Чтение всех товаров";
+    
+}
+
+@model IEnumerable<Product>;
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h1 class="text-center text-primary mb-5"> Все компании</h1>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Номер продукта</th>
+                    <th>Название продукта</th>
+                    <th>Стоимость</th>
+                    <th>Действия</th>
+                </tr>
+                @foreach(var data in Model)
+                {
+                    <tr class="text-center">
+                        <th>@data.EAN</th>
+                        <th>@data.NameProduct</th>
+                        <th>@data.Coast</th>
+                        <th>
+                            <a class="btn btn-sm  btn-danger m-1"   asp-controller="Product" asp-action="Delete" asp-route-id="@data.Id">Удалить</a>
+                        
+                            <a class="btn btn-sm  btn-success m-1"  asp-controller="Company" asp-action="Details" asp-route-id="@data.Id">Вывести все компании, у которых этот продукт</a>
+                        
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+
