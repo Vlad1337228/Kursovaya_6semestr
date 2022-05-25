@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\вуз\курсач\Курсовая 6 семестр\KnowledgeBase_MVC\KnowledgeBase_MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Company/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Company/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +45,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Service/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxSZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Shared/Error.cshtml]

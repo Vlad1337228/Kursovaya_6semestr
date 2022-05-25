@@ -3,3 +3,48 @@
 }
 
 
+<h1 class="text-center" style="width: 100%">
+    Этот сайт предназначен для мониторинга за конкурентами. В шапке сайта вы можете выбрать в кладку, то есть выбрать ресурс, над которым будет производиться анализ.
+</h1>
+
+
+<h6 class="text-center mt-5" style="width: 100%" > Загрузка файла с информацией по конкурентам их услугам и товарам</h6>
+<div class="justify-content-center align-items-center d-inline-flex" style="width: 400px">
+    <form id="upload-container"  method="POST" action="">
+              <div>
+                   <input id="file-input" class="m-3" type="file" name="file" multiple>
+                   <label for="file-input" class="m-3">Выберите файл</label>
+                   <span class="m-3">или перетащите его сюда</span>
+              </div>
+    </form>
+</div>
+
+<style>
+        #upload-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         width: 400px;
+         height: 400px;
+         outline: 2px dashed #5d5d5d;
+         outline-offset: -12px;
+         background-color: #e0f2f7;
+         font-family: 'Segoe UI';
+         color: #1f3c44;
+    }
+
+    #upload-container img {
+         width: 40%;
+         margin-bottom: 20px;
+         user-select: none;
+    }
+    #upload-container label {
+         font-weight: bold;
+    }
+
+    #upload-container label:hover {
+         cursor: pointer;
+         text-decoration: underline;
+    }
+</style>

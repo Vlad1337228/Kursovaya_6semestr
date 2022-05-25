@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using KnowledgeBase_MVC.AppContext;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KnowledgeBase_MVC.Controllers
@@ -7,13 +8,20 @@ namespace KnowledgeBase_MVC.Controllers
     {
 
 
+        private readonly AppKnowledgeContext _context;
+
+        public ServiceController(AppKnowledgeContext context)
+        {
+            _context = context;
+        }
 
         public ActionResult Read()
         {
-            return View();
+            var prod = _context.Service.ToList();
+            return View(prod);
         }
 
-        
+
         public ActionResult Index()
         {
             return View();
@@ -67,13 +75,19 @@ namespace KnowledgeBase_MVC.Controllers
             }
         }
 
-        
+
         public ActionResult Delete(int id)
         {
-            return View();
+            var prod = _context.Service.SingleOrDefault(e => e.Id == id);
+            if (prod != null)
+            {
+                _context.Service.Remove(prod);
+                _context.SaveChanges();
+            }
+            return View("Read", _context.Service.ToList());
         }
 
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

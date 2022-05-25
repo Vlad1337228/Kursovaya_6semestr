@@ -24,10 +24,14 @@
                         <th>@data.Location</th>
                         <th>
                             <a class="btn btn-sm  btn-danger m-1"   asp-controller="Company" asp-action="Delete" asp-route-id="@data.Id">Удалить</a>
+
+                            <a class="btn btn-sm  btn-dark m-1"   asp-controller="Company" asp-action="Edit" asp-route-id="@data.Id">Редактировать</a>
                         
                             <a class="btn btn-sm  btn-success m-1"  asp-controller="Product" asp-action="Details" asp-route-id="@data.Id">Вывести все товары по компании</a>
                         
                             <a class="btn btn-sm  btn-success m-1"  asp-controller="Service" asp-action="Details" asp-route-id="@data.Id">Вывести все услуги по компании</a>
+                           
+                            <a class="btn btn-sm  btn-success m-1"  asp-controller="Person"  asp-action="Details" asp-route-id="@data.Id">Вывести всех главных лиц компании</a>
                         </th>
                     </tr>
                 }

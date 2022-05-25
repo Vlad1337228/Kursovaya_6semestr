@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Чтение всех услуг";
+    
+}
+
+@model IEnumerable<Service>;
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h1 class="text-center text-primary mb-5"> Все услуги</h1>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Номер услуги</th>
+                    <th>Стоимость</th>
+                    <th>Действия</th>
+                </tr>
+                @foreach(var data in Model)
+                {
+                    <tr class="text-center">
+                        <th>@data.NameService</th>
+                        <th>@data.Coast</th>
+                        <th>
+                            <a class="btn btn-sm  btn-danger m-1"   asp-controller="Service" asp-action="Delete" asp-route-id="@data.Id">Удалить</a>
+
+                            <a class="btn btn-sm  btn-dark m-1"   asp-controller="Service" asp-action="Edit" asp-route-id="@data.Id">Редактировать</a>
+                        
+                            <a class="btn btn-sm  btn-success m-1"  asp-controller="Company" asp-action="Details" asp-route-id="@data.Id">Вывести все компании, у которых этота услуга</a>
+                        
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
