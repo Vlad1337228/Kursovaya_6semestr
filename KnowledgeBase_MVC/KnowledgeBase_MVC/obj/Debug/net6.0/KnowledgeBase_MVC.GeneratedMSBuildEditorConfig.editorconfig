@@ -35,12 +35,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Product/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxSZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Service/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/вуз/курсач/Курсовая 6 семестр/KnowledgeBase_MVC/KnowledgeBase_MVC/Views/Service/Index.cshtml]

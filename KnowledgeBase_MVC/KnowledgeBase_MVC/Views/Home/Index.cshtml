@@ -9,9 +9,9 @@
 
 
 <h6 class="text-center mt-5" style="width: 100%" > Загрузка файла с информацией по конкурентам их услугам и товарам</h6>
-<div class="justify-content-center align-items-center d-inline-flex" style="width: 400px">
-    <form id="upload-container"  method="POST" action="">
-              <div>
+<div class="input-file" >
+    <form id="upload-container">
+              <div class="input-file">
                    <input id="file-input" class="m-3" type="file" name="file" multiple>
                    <label for="file-input" class="m-3">Выберите файл</label>
                    <span class="m-3">или перетащите его сюда</span>
@@ -20,18 +20,26 @@
 </div>
 
 <style>
-        #upload-container {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-         width: 400px;
-         height: 400px;
-         outline: 2px dashed #5d5d5d;
-         outline-offset: -12px;
-         background-color: #e0f2f7;
-         font-family: 'Segoe UI';
-         color: #1f3c44;
+    .input-file
+    {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #upload-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width:400px;
+     height: 400px;
+     outline: 2px dashed #5d5d5d;
+     outline-offset: -12px;
+     background-color: #e0f2f7;
+     font-family: 'Segoe UI';
+     color: #1f3c44;
     }
 
     #upload-container img {
